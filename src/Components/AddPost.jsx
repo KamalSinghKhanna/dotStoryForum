@@ -118,9 +118,9 @@ const AddPost = () => {
         </div>
         <div className="add-post-main">
           <div className="add-post-body">
-            {userDetails && (
+            {/* {userDetails && (
               <button onClick={() => auth.signOut()}>logout</button>
-            )}
+            )} */}
             <div className="add-post-title">
               <input
                 onChange={e => handle(e)}
