@@ -1,0 +1,29 @@
+footer {
+  width: 100%;
+  padding: 2rem 1rem;
+  background: #181818;
+  border-top: 1px solid rgba(115, 128, 137, 0.16);
+  position: sticky;
+  bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_content img {
+  cursor: pointer;
+}
+
+.footer_active_tab {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}

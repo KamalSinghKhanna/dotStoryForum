@@ -1,0 +1,7 @@
+.App {
+  background-color: black;
+  /* height: 100vh; */
+  color: white;
+  display: flex;
+  justify-content: center;
+}

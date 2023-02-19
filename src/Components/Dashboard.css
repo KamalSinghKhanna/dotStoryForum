@@ -1,0 +1,384 @@
+.dashboard {
+  background-color: #1e1e1e;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  align-items: center;
+  gap: 19px;
+  justify-content: space-between;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+.upper-header {
+  display: flex;
+  gap: 240px;
+  /* border: 1px solid red; */
+  padding-left: 1.5rem;
+}
+.upper-header span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+
+  /* White */
+  color: #ffffff;
+}
+.right-side-u-h {
+  width: 66.66px;
+  height: 11.34px;
+}
+.right-side-u-h img {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 8px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid rgb(23, 0, 128); */
+}
+
+.user .user-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user-info > span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+
+  /* White */
+  color: #ffffff;
+}
+
+.active-user > span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  /* identical to box height, or 133% */
+  letter-spacing: 0.01em;
+
+  /* Neutral/Dark/Light */
+  color: #71727a;
+}
+
+.user .left-arrow,
+.info {
+  width: 22px;
+  height: 22px;
+}
+
+.user img {
+  width: 100%;
+  height: 100%;
+}
+
+.cat-img {
+  width: 343px;
+  height: 148px;
+}
+
+.cat-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.create-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 10px;
+  gap: 18px;
+  width: 323px;
+  height: 78px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.create-post-u {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.create-post-u .nobu-img {
+  width: 42px;
+  height: 42px;
+}
+
+.create-post-u .nobu-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.create-post-u .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 16px;
+
+  width: 239px;
+  height: 20px;
+
+  background: #2a2a2a;
+  border-radius: 8px;
+}
+
+.create-post-u .btn span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* identical to box height, or 143% */
+  display: flex;
+  align-items: center;
+
+  /* Dark Sub text */
+  color: #999ca2;
+}
+.create-post-l {
+  display: flex;
+  gap: 17px;
+  width: 324px;
+  height: 22px;
+}
+
+.create-post-l .upload-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.upload-item img {
+  width: 22px;
+  height: 22px;
+}
+
+.upload-item span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  /* identical to box height */
+  letter-spacing: 0.005em;
+
+  /* Dark Sub text */
+  color: #999ca2;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14px 0px;
+  gap: 14px;
+  width: 343px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.create-post-handler {
+  position: sticky;
+  bottom: 8rem;
+  /* right: 1rem; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.full-post {
+  height: 210px;
+}
+.post-u {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid yellow; */
+  width: 343px;
+  gap: 15px;
+}
+
+.post-u-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid rgb(243, 76, 25); */
+}
+
+.post-u-header .user-details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-details .user-pic {
+  width: 26px;
+  height: 26px;
+}
+
+.user-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-name span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* identical to box height, or 143% */
+
+  /* White */
+  color: #ffffff;
+}
+
+.post-h-time {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-h-time span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+
+  /* identical to box height, or 167% */
+  text-align: right;
+
+  /* Dark Sub text */
+  color: #999ca2;
+}
+
+.post-h-time img {
+  width: 18px;
+  height: 18px;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.post-u-title span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.post-u-content p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.post-l {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post-l .u-item {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.post-l span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+
+  /* identical to box height, or 167% */
+
+  /* Dark Sub text */
+  color: #999ca2;
+}
+
+.post-l .line {
+  height: 13px;
+  width: 1px;
+  margin: 0 10px;
+}
+
+.show-comment {
+  padding-top: 5px;
+}
+.not-show-comment {
+  display: none;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+.comment span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.comment span > span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.005em;
+  color: #999ca2;
+  padding-right: 6px;
+}
