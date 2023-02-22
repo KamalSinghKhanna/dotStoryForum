@@ -16,9 +16,11 @@ import { authenticate } from '../helper/auth';
 import { USER_LOGIN } from '../constants/constants';
 import { createPost } from '../helper/post';
 import { toast } from 'react-hot-toast';
+import PopUp from './PopUp';
 
 const AddPost = () => {
   const navigate = useNavigate();
+  const [popup, setPopup] = useState(false)
   const { userDetails, loading, dispatch } = useContext(AuthContext);
   const [data, setData] = useState({
     title: '',
@@ -53,7 +55,9 @@ const AddPost = () => {
       });
     }
   };
-
+  function showPopUp(){
+      setPopup(true)
+  }
   function handle(e) {
     const newdata = { ...data };
     newdata[e.target.id] = e.target.value;
@@ -116,6 +120,7 @@ const AddPost = () => {
             )
           )}
         </div>
+       
         <div className="add-post-main">
           <div className="add-post-body">
             {/* {userDetails && (
@@ -129,6 +134,7 @@ const AddPost = () => {
                 type="text"
                 placeholder="Title"
                 disabled={!userDetails}
+                autoFocus
               />
             </div>
             <div className="add-post-content">
@@ -142,14 +148,23 @@ const AddPost = () => {
               />
             </div>
           </div>
+          
           <div className={`add-post-attachement ${!userDetails && `disabled`}`}>
             <span>Add</span>
-            <img src={gallery} alt="" />
+            <img onClick={showPopUp} src={gallery} alt="" />
             <img src={video} alt="" />
             <img src={document} alt="" />
             <img src={gif} alt="" />
           </div>
         </div>
+        <div>
+          {loading ? (
+            <p>Loading...</p>
+          ) : (
+            popup ? <PopUp /> :null
+          )}
+        </div>
+      
       </div>
     </>
   );

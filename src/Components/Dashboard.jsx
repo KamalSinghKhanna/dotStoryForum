@@ -37,7 +37,7 @@ const Dashboard = () => {
           <img src={catImg} alt="" />
         </div>
       </div>
-      <div className="create-post">
+      {/* <div className="create-post">
         <div className="create-post-u">
           <div className="nobu-img">
             <img src={nobuImg} alt="" />
@@ -64,7 +64,7 @@ const Dashboard = () => {
             <span>GIF</span>
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="posts">
         <Post />
       </div>

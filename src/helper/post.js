@@ -23,6 +23,14 @@ export const getAllPost = async () => {
   console.log(data);
   return data;
 };
+export const getPostById = async (postId, idToken) => {
+  const response = await fetch(
+    `${DEV_API}/communities/post/${postId}/`
+  );
+  const data = await response.json();
+  console.log(data);
+  return data;
+};
 
 export const upvotePost = async (postId, idToken) => {
   const response = await fetch(

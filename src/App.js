@@ -5,6 +5,8 @@ import AddPost from './Components/AddPost';
 import Comment from './Components/Comment';
 import { AuthContextProvider } from './context/AuthContext';
 import { Toaster } from 'react-hot-toast';
+import SinglePost from './Components/SinglePost';
+import PopUp from './Components/PopUp';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/createpost" element={<AddPost />} />
             {/* <Route path="/comment" element={<Comment />} /> */}
+            <Route path='/post/:postId' element={<SinglePost />} />
+            <Route path='/popup' element={<PopUp />}/>
           </Routes>
           <Toaster
             containerStyle={{

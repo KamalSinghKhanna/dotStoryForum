@@ -8,14 +8,14 @@ import exportImg from '../images/export.png';
 import line from '../images/Line.png';
 import nobuImg from '../images/nobu.png';
 import { toast } from 'react-hot-toast';
-import { downvotePost, getAllPost, upvotePost } from '../helper/post';
+import { downvotePost, getAllPost, upvotePost, getPostById } from '../helper/post';
 import { AuthContext } from '../context/AuthContext';
 import { formatDate } from './utils/FormatDate';
-
+import { useNavigate } from 'react-router-dom';
 const Post = () => {
   const { userDetails } = useContext(AuthContext);
   const [data, setData] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchAllPosts = async () => {
       const response = await getAllPost();
@@ -25,7 +25,6 @@ const Post = () => {
 
     fetchAllPosts();
   }, []);
-
   const handleUpVote = async postId => {
     upvotePost(postId, userDetails?.token).then(res => {
       console.log(res);
@@ -38,13 +37,23 @@ const Post = () => {
     });
   };
 
+  
+  const showSinglePost = (postId) => {
+    
+      // navigate('/singlepost', res);
+      navigate(`/post/${postId}`);
+    
+    // navigate('/singlepost')
+    
+  }
+
   return (
     <>
       {data &&
         data.map((post, i) => {
           return (
             <div className="post" key={i}>
-              <div className="post-u">
+              <div onClick={()=> showSinglePost(post?.id)}  className="post-u">
                 <div className="post-u-header">
                   <div className="user-details">
                     <div className="user-pic">
