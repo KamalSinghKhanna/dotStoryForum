@@ -1,11 +1,11 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
-import home from '../images/home.svg';
-import users from '../images/users.svg';
-import user from '../images/user.svg';
-import activeBorder from '../images/active-border.svg';
-import { toast, Toaster } from 'react-hot-toast';
+import home from "../images/home.svg";
+import users from "../images/users.svg";
+import user from "../images/user.svg";
+import activeBorder from "../images/active-border.svg";
+import { toast, Toaster } from "react-hot-toast";
 
 export const Footer = () => {
   return (
@@ -16,13 +16,13 @@ export const Footer = () => {
             src={home}
             alt="Home"
             onClick={() => {
-              toast('Coming Soon', {
+              toast("Coming Soon", {
                 duration: 2000,
-                icon: '👏',
+                icon: "👏",
                 style: {
-                  borderRadius: '10px',
-                  background: '#333',
-                  color: '#fff',
+                  borderRadius: "10px",
+                  background: "#333",
+                  color: "#fff",
                 },
               });
             }}
@@ -36,13 +36,13 @@ export const Footer = () => {
             src={user}
             alt="User"
             onClick={() => {
-              toast('Coming Soon', {
+              toast("Coming Soon", {
                 duration: 2000,
-                icon: '👏',
+                icon: "👏",
                 style: {
-                  borderRadius: '10px',
-                  background: '#333',
-                  color: '#fff',
+                  borderRadius: "10px",
+                  background: "#333",
+                  color: "#fff",
                 },
               });
             }}
