@@ -1,0 +1,317 @@
+.profile{
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: fixed;
+    overflow-x: hidden;
+}
+.profile .profile-header-outer{
+    width: 100%;
+    padding-bottom: .4rem;
+}
+.profile .profile-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem;
+}
+
+.profile-header .left-arrow{
+    width: 22px;
+    height: 22px;
+}
+.profile-header .three-dot{
+    width: 22px;
+    height: 22px;
+}
+
+.profile-header .three-dot img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile-header .logout-btn{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 28px;
+gap: 10px;
+position: absolute;
+width: 41px;
+height: 20px;
+background: #2A2D31;
+border-radius: 8px;
+top: 8%;
+right: 4%;
+}
+
+.user-profile-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 1rem;
+}
+
+.user-profile-details .profile-img{
+    width: 82px;
+height: 82px;
+}
+
+.user-profile-details .profile-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.user-profile-details .profile-user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.user-profile-details .profile-username span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.005em;
+
+/* White */
+color: #FFFFFF;
+
+
+}
+.profile-user-info .profile-stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    /* border: 1px solid red; */
+    padding-left: 20px;
+}
+
+.profile-user-info .profile-stats span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.005em;
+
+/* Dark Sub text */
+color: #999CA2;
+
+
+}
+
+.profile-stats div{
+    width: 4px;
+    height: 4px;
+    background: #999CA2;
+    border-radius: 9px;
+}
+
+.profile .join-btn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 8px;
+    background: #2F3036;
+border-radius: 8px;
+margin-top: 4px;
+}
+
+.profile .join-btn span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 20px;
+
+/* identical to box height, or 167% */
+display: flex;
+align-items: center;
+
+/* White */
+color: #FFFFFF;
+
+
+}
+
+.user-profile-details .profile-caption span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+
+/* or 167% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* White */
+color: #FFFFFF;
+
+
+}
+
+.profile-main{
+    width: 100%;
+    margin-top: 24px;
+    padding-bottom: 3rem;
+}
+.profile-member{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+}
+
+.member-text span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+
+/* identical to box height, or 143% */
+
+/* White */
+color: #FFFFFF;
+
+}
+
+.see-all-text span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+
+/* identical to box height, or 167% */
+text-align: right;
+
+/* Dark Sub text */
+color: #999CA2;
+}
+.profile-main .users-to-follow{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.profile-main .users-to-follow .users {
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px 0;
+gap: 10px;
+
+
+}
+
+.profile-main .users-to-follow .users .user-img{
+    width: 40px;
+height: 40px;
+}
+
+.profile-main .users-to-follow .users .user-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile-main .users-to-follow .users .user-info{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+
+}
+
+.profile-main .users-to-follow .users .user-info .username span{
+    /* Heading/H5 */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+
+/* identical to box height */
+
+/* White */
+color: #FFFFFF;
+
+
+}
+
+.profile-main .users-to-follow .users .user-info .user-status span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+
+/* identical to box height, or 133% */
+letter-spacing: 0.01em;
+
+color: #71727A;
+
+
+}
+
+.users-to-follow .follow-btn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 8px;
+
+width: 30px;
+height: 20px;
+
+/* Primary Color */
+background: #FC9B00;
+border-radius: 8px;
+}
+
+.follow-btn span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 20px;
+
+/* identical to box height, or 167% */
+display: flex;
+align-items: center;
+
+/* White */
+color: #FFFFFF;
+
+}

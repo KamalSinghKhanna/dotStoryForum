@@ -1,6 +1,6 @@
 .dashboard {
   background-color: #1e1e1e;
-  width: 375px;
+  width: 355px;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -8,6 +8,7 @@
   gap: 19px;
   justify-content: space-between;
   position: relative;
+  padding-top: 0.5rem;
 }
 a {
   text-decoration: none;
@@ -15,18 +16,15 @@ a {
 .upper-header {
   display: flex;
   gap: 240px;
-  /* border: 1px solid red; */
   padding-left: 1.5rem;
 }
 .upper-header span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.005em;
-
-  /* White */
   color: #ffffff;
 }
 .right-side-u-h {
@@ -43,13 +41,13 @@ a {
   flex-direction: column;
   gap: 6px;
   padding-top: 8px;
+  width: 100%;
 }
 
 .user {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid rgb(23, 0, 128); */
 }
 
 .user .user-left {
@@ -59,44 +57,42 @@ a {
 }
 
 .user-info > span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.005em;
-
-  /* White */
   color: #ffffff;
 }
 
 .active-user > span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-
-  /* identical to box height, or 133% */
   letter-spacing: 0.01em;
-
-  /* Neutral/Dark/Light */
   color: #71727a;
 }
 
-.user .left-arrow,
+.user
 .info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.user .info .nobu-img img{
+  width: 36px;
+height: 36px;
+} 
+.user img {
   width: 22px;
   height: 22px;
 }
 
-.user img {
-  width: 100%;
-  height: 100%;
-}
-
 .cat-img {
-  width: 343px;
+  width: 100%;
   height: 148px;
 }
 
@@ -147,17 +143,13 @@ a {
 }
 
 .create-post-u .btn span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-
-  /* identical to box height, or 143% */
   display: flex;
   align-items: center;
-
-  /* Dark Sub text */
   color: #999ca2;
 }
 .create-post-l {
@@ -185,16 +177,12 @@ a {
 }
 
 .upload-item span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-
-  /* identical to box height */
   letter-spacing: 0.005em;
-
-  /* Dark Sub text */
   color: #999ca2;
 }
 
@@ -203,6 +191,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
+  width: 100%;
 }
 
 .post {
@@ -211,14 +200,13 @@ a {
   align-items: flex-start;
   padding: 14px 0px;
   gap: 14px;
-  width: 343px;
+  width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .create-post-handler {
   position: sticky;
   bottom: 8rem;
-  /* right: 1rem; */
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -226,20 +214,20 @@ a {
 
 .full-post {
   height: 210px;
+  
 }
 .post-u {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid yellow; */
-  width: 343px;
+  width: 100%;
   gap: 15px;
+  cursor: pointer;
 }
 
 .post-u-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid rgb(243, 76, 25); */
 }
 
 .post-u-header .user-details {
@@ -259,15 +247,11 @@ a {
 }
 
 .user-name span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-
-  /* identical to box height, or 143% */
-
-  /* White */
   color: #ffffff;
 }
 
@@ -278,16 +262,14 @@ a {
 }
 
 .post-h-time span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
 
-  /* identical to box height, or 167% */
   text-align: right;
 
-  /* Dark Sub text */
   color: #999ca2;
 }
 
@@ -303,7 +285,7 @@ a {
 }
 
 .post-u-title span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -312,7 +294,7 @@ a {
 }
 
 .post-u-content p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -334,15 +316,11 @@ a {
 }
 
 .post-l span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-
-  /* identical to box height, or 167% */
-
-  /* Dark Sub text */
   color: #999ca2;
 }
 
@@ -364,7 +342,7 @@ a {
   flex-direction: column;
 }
 .comment span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -373,7 +351,7 @@ a {
 }
 
 .comment span > span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
